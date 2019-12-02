@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+	<body>
+		<form>
+			<div class="container">
+				<h2>TODO PROJECT</h2>
+				<button type="button" class="btn btn-primary" onclick="this.innerHTML=Date()">DATE</button><br><br>
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">ADD NEW TASK</button>
+				<table class="table table-striped" id="table">
+					<thead>
+						<tr>
+							<th>DATE</th>
+							<th>NAME</th>
+							<th>TASK</th>
+							<th>STATUS</th>
+					</thead>
+				</table>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+                                <div class="form-group">
+									<label>NAME</label>
+									<input type="text" class="form-control" id="fname"  name="fname" onfocus="this.value=''" value="name">
+								</div>
+								<div class="form-group">
+									<label>TASK</label>
+									<input type="text" class="form-control" id="lname"  name="lname" onfocus="this.value=''" value="task">
+								</div><button type="button">
+									<div class="form-group">
+										<lable for="age">STATUS</lable>
+										<select class="from-control" id="age">
+									 		<option type="button" class="btn btn-success">COMPLETE</option>
+									 		<option type="button" class="btn btn-danger">INCOMPLET</option>
+										    <option type="button" class="btn btn-warning">INPROCESS</option>		
+										</select>
+									</div>
+									</button>
+									
+									<div class="form-group">						
+									</div>
+								</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="submit" data-dismiss="modal"  onclick="addRow();" class="btn btn-default">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+		</form>
+		<script src="index.js"></script>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
